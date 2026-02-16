@@ -71,13 +71,12 @@ This allows new neural operators and governing equations to be introduced with m
 
 To introduce a new neural operator:
 
-1. Implement the operator inside:<br>
-models/
-<br>
+1. Implement the operator inside:models/
+   
 Examples: <br>
-- models/fno.py
-- models/graph_neural_operator.py
-- models/transformer_operator.py
+1. models/fno.py <br>
+2. models/graph_neural_operator.py <br>
+3. models/transformer_operator.py <br>
 
 
 Each operator should:
@@ -102,12 +101,11 @@ This enables **fair comparison between different neural operators under the same
 
 To change the governing equation:
 
-1. Add or modify residual definitions in:
-physics/ <br><br>
-Examples:
-- physics/burgers.py
-- physics/heat_equation.py
-- physics/navier_stokes.py
+1. Add or modify residual definitions in: physics/ <br>
+Examples:<br>
+1. physics/burgers.py
+2. physics/heat_equation.py
+3. physics/navier_stokes.py
 
 
 Each physics module should:
