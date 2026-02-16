@@ -1,0 +1,32 @@
+deeponet_pino/
+│
+├── data/
+│   ├── generate_data.py "done"
+│   ├── dataset.py "done"
+│   └── __init__.py
+│
+├── models/
+│   ├── deeponet.py "done"
+│   ├── layers.py "done"
+│   └── __init__.py
+│
+├── physics/
+│   ├── residuals.py "done"
+│   ├── initial_conditions.py "done"
+│   └── __init__.py
+│
+├── training/
+│   ├── train_step.py "done"
+│   ├── trainer.py "done"
+│   └── __init__.py
+│
+├── utils/
+│   ├── normalization.py "done"
+│   ├── seed.py "done"
+│   └── __init__.py
+│
+├── experiments/
+│   └── run_training.py "done"
+│
+├── requirements.txt
+└── README.md
