@@ -75,9 +75,9 @@ To introduce a new neural operator:
 models/
 <br>
 Examples: <br>
-models/fno.py
-models/graph_neural_operator.py
-models/transformer_operator.py
+- models/fno.py
+- models/graph_neural_operator.py
+- models/transformer_operator.py
 
 
 Each operator should:
