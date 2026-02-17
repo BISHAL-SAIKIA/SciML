@@ -22,7 +22,6 @@ venv/
 # Jupyter / PINN experiments
 # ===============================
 .ipynb_checkpoints/
-*.ipynb
 
 # ===============================
 # VS Code

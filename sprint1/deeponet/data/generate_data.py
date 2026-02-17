@@ -157,3 +157,29 @@ def generate_initial_condition_data(forcing_samples):
 
     X_init = torch.cat([t0, forcing_samples, dummy], dim=1)
     return X_init
+
+
+
+
+## BURGER'S EQ
+
+def generate_burgers_initial_conditions(
+    num_functions,
+    x_dim
+):
+    """
+    Generates random smooth initial conditions u0(x)
+    """
+    x_grid = torch.linspace(0, 1, x_dim).unsqueeze(1)
+
+    u0 = torch.zeros(num_functions, x_dim)
+
+    for i in range(num_functions):
+        a = torch.randn(3)
+        u0[i] = (
+            a[0] * torch.sin(2 * torch.pi * x_grid[:, 0]) +
+            a[1] * torch.sin(4 * torch.pi * x_grid[:, 0]) +
+            a[2] * torch.sin(6 * torch.pi * x_grid[:, 0])
+        )
+
+    return u0, x_grid
